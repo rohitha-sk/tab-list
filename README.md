@@ -1,5 +1,5 @@
 --- React Tabbed Interface ---
-
+pls ignore the meaning of titles and paragraphs. 
 This project was built to learn React’s rendering, component lifecycle, and state management, focusing on how React’s diffing algorithm affects state persistence. It features a tabbed interface with five tabs (Inbox, Snoozed, Sent, All Mail, Trash). Clicking a tab updates the active tab’s state via a handleActiveTab function, highlighting the selected tab in blue. Tabs 1–4 display content from an array in the TabContent component, which includes a "Likes" counter that increments with a button click. Tab 5 (Trash) shows a unique DifferentTabContent component with an image and text.
 Key insight: State (e.g., "Likes" count) persists when switching between tabs 1–4 because React reuses the same TabContent instance. 
 if Its need to reset the likes count when switching between each tab, the only thing we should do is to add the key props to TabContent component.
