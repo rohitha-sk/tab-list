@@ -78,7 +78,7 @@ function TabList() {
           }
         </div>
         <div className="p-1">
-          {num <= 4 ? <TabContent item={content[num]} /> : <DifferentTabContent />}
+          {num <= 4 ? <TabContent item={content.at(num)} /> : <DifferentTabContent />}
         </div>
       </div>
     </div>
